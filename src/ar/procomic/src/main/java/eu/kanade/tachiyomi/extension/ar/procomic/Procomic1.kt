@@ -8,6 +8,7 @@ import org.jsoup.nodes.Element
 import java.text.SimpleDateFormat
 import java.util.*
 
+
 class Procomic : ParsedHttpSource() {
 
     override val name = "Procomic"
