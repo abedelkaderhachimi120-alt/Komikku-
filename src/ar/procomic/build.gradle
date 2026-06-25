@@ -9,12 +9,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 34
+    compileSdkVersion 35
 
     defaultConfig {
         applicationId "eu.kanade.tachiyomi.extension.ar.procomic"
-        minSdkVersion 24
-        targetSdkVersion 34
+        minSdkVersion 21
+        targetSdkVersion 35
         versionCode 1
         versionName "1.1"
 
