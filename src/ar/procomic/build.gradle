@@ -1,8 +1,8 @@
 ext {
     extName = 'Procomic'
     extPackage = 'eu.kanade.tachiyomi.extension.ar.procomic'
-    extVersionCode = 1
-    libVersion = '1.1'
+    extVersionCode = 1 
+    libVersion = '1.1' 
 }
 
 apply plugin: 'com.android.application'
