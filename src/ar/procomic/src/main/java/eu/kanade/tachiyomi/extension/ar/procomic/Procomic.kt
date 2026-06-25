@@ -7,6 +7,11 @@ import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import java.text.SimpleDateFormat
 import java.util.*
+import okhttp3.Request
+import okhttp3.Response
+
+// ثابت لتوحيد اسم ملف التفضيلات
+private const val PREF_NAME = "source_procomic_prefs"
 
 class Procomic : ParsedHttpSource() {
 
@@ -16,9 +21,9 @@ class Procomic : ParsedHttpSource() {
     override val supportsLatest = true
     override val client = network.cloudflareClient
 
-    // Preferences
+    // استخدام الـ context لجلب التفضيلات بشكل صحيح
     private val preferences by lazy {
-        sourcePref.getSharedPreferences("source_${id}_prefs", 0)
+        context.getSharedPreferences(PREF_NAME, 0)
     }
 
     var customBaseUrl: String
