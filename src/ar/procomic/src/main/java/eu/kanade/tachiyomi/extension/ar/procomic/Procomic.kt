@@ -15,7 +15,6 @@ class Procomic : ParsedHttpSource() {
     override val lang = "ar"
     override val supportsLatest = true
     override val client = network.cloudflareClient
-
     // Preferences
     private val preferences by lazy {
         sourcePref.getSharedPreferences("source_${id}_prefs", 0)
