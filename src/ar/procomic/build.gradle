@@ -4,7 +4,8 @@ ext {
     extVersionCode = 1
     libVersion = '1.21'
 }
-apply plugin: 'kotlin-android'
+
+apply plugin: 'com.android.application' id 'kotlin-android'
 
 android {
     compileSdkVersion 34
