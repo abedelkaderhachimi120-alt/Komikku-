@@ -4,11 +4,10 @@ ext {
     extVersionCode = 1
     libVersion = '1.21'
 }
-apply plugin: 'kotlin-android'
+apply plugin: "'com.android.application','kotlin-android'"
+
 
 android {
-    compileSdkVersion 34
-
     defaultConfig {
         applicationId "eu.kanade.tachiyomi.extension.ar.procomic"
         minSdkVersion 21
@@ -26,7 +25,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            minifyEnabled true
+            minifyEnabled false
         }
     }
 
