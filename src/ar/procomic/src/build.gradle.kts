@@ -11,3 +11,4 @@ keiyoushi {
     theme = "madara"
     baseUrl = "https://procomic.pro/"
 }
+
